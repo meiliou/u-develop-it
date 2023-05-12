@@ -2,6 +2,8 @@
 // e.g., inputCheck(object, 'prop1', 'prop2', 'etc')
 
 module.exports = function(obj, ...props) {
+  console.log('obj:', obj);
+  console.log('props:', props);
   const errors = [];
 
   props.forEach((prop) => {
